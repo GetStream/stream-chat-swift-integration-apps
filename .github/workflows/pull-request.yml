@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        integration: [spm, cocoapods, carthage]
+        integration: [spm, cocoapods]
         env: [production]
         include:
           - integration: spm
