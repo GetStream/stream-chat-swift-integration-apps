@@ -13,7 +13,35 @@
 		A3A380D62743BF0A00CB4D6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A380CB2743BF0A00CB4D6C /* User.swift */; };
 		A3A380D72743BF0A00CB4D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A380CC2743BF0A00CB4D6C /* LaunchScreen.storyboard */; };
 		A3A380D92743BF0A00CB4D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A380D02743BF0A00CB4D6C /* AppDelegate.swift */; };
+		A3A380E62743D7FC00CB4D6C /* Nuke.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DD2743D7F500CB4D6C /* Nuke.xcframework */; };
+		A3A380E72743D7FC00CB4D6C /* Nuke.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DD2743D7F500CB4D6C /* Nuke.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A380E92743D7FD00CB4D6C /* Starscream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DE2743D7F500CB4D6C /* Starscream.xcframework */; };
+		A3A380EA2743D7FD00CB4D6C /* Starscream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DE2743D7F500CB4D6C /* Starscream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A380EB2743D7FF00CB4D6C /* StreamChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380E02743D7F500CB4D6C /* StreamChat.xcframework */; };
+		A3A380EC2743D7FF00CB4D6C /* StreamChat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380E02743D7F500CB4D6C /* StreamChat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A380ED2743D80000CB4D6C /* StreamChatUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DC2743D7F500CB4D6C /* StreamChatUI.xcframework */; };
+		A3A380EE2743D80000CB4D6C /* StreamChatUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DC2743D7F500CB4D6C /* StreamChatUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A380EF2743D80100CB4D6C /* SwiftyGif.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DF2743D7F500CB4D6C /* SwiftyGif.xcframework */; };
+		A3A380F02743D80100CB4D6C /* SwiftyGif.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A380DF2743D7F500CB4D6C /* SwiftyGif.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3A380E82743D7FC00CB4D6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3A380EC2743D7FF00CB4D6C /* StreamChat.xcframework in Embed Frameworks */,
+				A3A380F02743D80100CB4D6C /* SwiftyGif.xcframework in Embed Frameworks */,
+				A3A380EE2743D80000CB4D6C /* StreamChatUI.xcframework in Embed Frameworks */,
+				A3A380EA2743D7FD00CB4D6C /* Starscream.xcframework in Embed Frameworks */,
+				A3A380E72743D7FC00CB4D6C /* Nuke.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A3A380AF2743BEEC00CB4D6C /* StreamChatIntegration-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,11 @@
 		A3A380CD2743BF0A00CB4D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A380D02743BF0A00CB4D6C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A380D12743BF0A00CB4D6C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A380DC2743D7F500CB4D6C /* StreamChatUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChatUI.xcframework; path = Carthage/Build/StreamChatUI.xcframework; sourceTree = SOURCE_ROOT; };
+		A3A380DD2743D7F500CB4D6C /* Nuke.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nuke.xcframework; path = Carthage/Build/Nuke.xcframework; sourceTree = SOURCE_ROOT; };
+		A3A380DE2743D7F500CB4D6C /* Starscream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Starscream.xcframework; path = Carthage/Build/Starscream.xcframework; sourceTree = SOURCE_ROOT; };
+		A3A380DF2743D7F500CB4D6C /* SwiftyGif.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyGif.xcframework; path = Carthage/Build/SwiftyGif.xcframework; sourceTree = SOURCE_ROOT; };
+		A3A380E02743D7F500CB4D6C /* StreamChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChat.xcframework; path = Carthage/Build/StreamChat.xcframework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A380ED2743D80000CB4D6C /* StreamChatUI.xcframework in Frameworks */,
+				A3A380EF2743D80100CB4D6C /* SwiftyGif.xcframework in Frameworks */,
+				A3A380E62743D7FC00CB4D6C /* Nuke.xcframework in Frameworks */,
+				A3A380EB2743D7FF00CB4D6C /* StreamChat.xcframework in Frameworks */,
+				A3A380E92743D7FD00CB4D6C /* Starscream.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +109,11 @@
 		A3A380DB2743C22100CB4D6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3A380DD2743D7F500CB4D6C /* Nuke.xcframework */,
+				A3A380DE2743D7F500CB4D6C /* Starscream.xcframework */,
+				A3A380E02743D7F500CB4D6C /* StreamChat.xcframework */,
+				A3A380DC2743D7F500CB4D6C /* StreamChatUI.xcframework */,
+				A3A380DF2743D7F500CB4D6C /* SwiftyGif.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +128,7 @@
 				A3A380AB2743BEEC00CB4D6C /* Sources */,
 				A3A380AC2743BEEC00CB4D6C /* Frameworks */,
 				A3A380AD2743BEEC00CB4D6C /* Resources */,
+				A3A380E82743D7FC00CB4D6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

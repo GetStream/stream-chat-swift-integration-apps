@@ -32,12 +32,12 @@ fi
 if [[ "$INTEGRATION" = "carthage" ]]; then
   echo "> Starting to grab SDKs using Carthage integration."
 
-  echo "> Running: carthage update --use-binaries"
-  carthage update --use-binaries
+  echo "> Running: carthage update --use-xcframeworks --platform iOS"
+  ./scripts/carthage.sh build --use-xcframeworks --platform iOS
   exit;
 fi
 
-# All integration types
+# All integration types - can be leveraged for local - non CI purposes
 if [[ -z "$INTEGRATION" ]]; then
   echo "> Integration option was not specified (eg: carthage, cocoapods or manual). Script will grab SDKs using all supported dependency managers."
 
@@ -45,6 +45,6 @@ if [[ -z "$INTEGRATION" ]]; then
   echo "> Running: bundle exec pod update"
   bundle exec pod update
 
-  echo "> Running: carthage update --use-xcframeworks"
-  carthage update --use-xcframeworks
+  echo "> Running: carthage update --use-xcframeworks --platform iOS"
+  ./scripts/carthage.sh build --use-xcframeworks --platform iOS
 fi
