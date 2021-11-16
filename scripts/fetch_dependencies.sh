@@ -32,7 +32,7 @@ fi
 if [[ "$INTEGRATION" = "carthage" ]]; then
   echo "> Starting to grab SDKs using Carthage integration."
 
-  echo "> Running: carthage update --use-xcframeworks --platform iOS"
+  echo "> ./scripts/carthage.sh build --use-xcframeworks --platform iOS"
   ./scripts/carthage.sh build --use-xcframeworks --platform iOS
   exit;
 fi
@@ -45,6 +45,6 @@ if [[ -z "$INTEGRATION" ]]; then
   echo "> Running: bundle exec pod update"
   bundle exec pod update
 
-  echo "> Running: carthage update --use-xcframeworks --platform iOS"
+  echo "> ./scripts/carthage.sh build --use-xcframeworks --platform iOS"
   ./scripts/carthage.sh build --use-xcframeworks --platform iOS
 fi

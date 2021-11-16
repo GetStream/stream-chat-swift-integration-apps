@@ -33,9 +33,6 @@ jobs:
           - integration: cocoapods
             integration_type: cocoapods
             scheme: StreamChatIntegration-CocoaPods
-          - integration: carthage
-            integration_type: carthage
-            scheme: StreamChatIntegration-Carthage
 
     steps:
     - uses: actions/checkout@v1
