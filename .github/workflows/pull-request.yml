@@ -1,0 +1,63 @@
+name: PULL REQUEST
+
+on:
+  pull_request:
+    branches:
+      - main
+      
+  # Can be manually triggered
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+  
+env:
+  HOMEBREW_NO_INSTALL_CLEANUP=1: 1 # Disable cleanup for homebrew, we don't need it on CI
+
+jobs:
+  integration-tests:
+    name: Integration Tests
+    # The following runner label `macos-10.15` is used by the Github hosted runners and the self-hosed runners
+    runs-on: macos-11
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        integration: [spm, cocoapods]
+        env: [production]
+        include:
+          - integration: spm
+            integration_type: spm
+            scheme: StreamChatIntegration-SPM
+          - integration: cocoapods
+            integration_type: cocoapods
+            scheme: StreamChatIntegration-CocoaPods
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 100
+
+    - uses: zendesk/setup-ruby@v1.75.0
+      with:
+        ruby-version: 3.0.1
+
+    - uses: actions/cache@v2
+      id: rubygem-cache
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    - name: Install Dependencies
+      run: |
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+
+    - name: Fetch SDKs via given dependency option
+      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }}
+
+    - name: Build Integration App
+      run: bundle exec fastlane build_integration_app scheme:${{ matrix.scheme }}

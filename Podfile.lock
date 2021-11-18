@@ -1,0 +1,32 @@
+PODS:
+  - Nuke (10.5.1)
+  - Starscream (4.0.4)
+  - StreamChat (4.5.0):
+    - Starscream (~> 4.0)
+  - StreamChatUI (4.5.0):
+    - Nuke (~> 10.0)
+    - StreamChat (= 4.5.0)
+    - SwiftyGif (~> 5.0)
+  - SwiftyGif (5.4.0)
+
+DEPENDENCIES:
+  - StreamChatUI
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+    - Starscream
+    - StreamChat
+    - StreamChatUI
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Nuke: 6ae28db7d24c07d040bcc52f6957b32dac23e91b
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  StreamChat: 66b26dc31a4aa2c0b5dca6ba45f88604c470f267
+  StreamChatUI: 4adb2dd23041a8080e9d33377a8c780cdb204288
+  SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
+
+PODFILE CHECKSUM: 00f05d8b92e06b80e9bab6773742f1f71d119503
+
+COCOAPODS: 1.11.2
