@@ -1,4 +1,1 @@
-github "kirualex/SwiftyGif" ~> 5.0
-github "kean/Nuke" ~> 10.0
-github "daltoniam/Starscream" ~> 4.0
-github "GetStream/stream-chat-swift" ~> 4.4.0
+github "GetStream/stream-chat-swift" ~> 4.5.0
