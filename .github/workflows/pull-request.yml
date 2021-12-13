@@ -57,7 +57,7 @@ jobs:
         bundle install --jobs 4 --retry 3
 
     - name: Fetch SDKs via given dependency option
-      if: !startsWith(matrix.integration_type, "spm")
+      if: startsWith(${{ matrix.integration_type }}, "spm") == false
       run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }}
 
     - name: Build Integration App
