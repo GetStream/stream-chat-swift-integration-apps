@@ -33,7 +33,7 @@ lane :test_release do |options|
   sh("git checkout -b " + "release/" + version_number)
 
   # Update versions in the respective integration apps
-  sh("sh scripts/fetch_dependencies.sh -v #{version_number}")
+  sh("cd .. && scripts/fetch_dependencies.sh -v #{version_number}")
   sh("git add -A")
 
   if(!prompt(text: "Will commit changes. All looking good?", boolean: true))
