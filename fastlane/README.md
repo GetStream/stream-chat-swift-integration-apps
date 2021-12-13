@@ -15,6 +15,14 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
+### test_release
+```
+fastlane test_release
+```
+Start a new release
+
+----
+
 ## iOS
 ### ios build_integration_app
 ```
