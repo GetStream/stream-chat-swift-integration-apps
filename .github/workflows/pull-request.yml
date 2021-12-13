@@ -14,8 +14,6 @@ concurrency:
   
 env:
   HOMEBREW_NO_INSTALL_CLEANUP=1: 1 # Disable cleanup for homebrew, we don't need it on CI
-  BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-  VERSION="${BRANCH_NAME#release/}"
 
 jobs:
   integration-tests:
@@ -59,6 +57,9 @@ jobs:
         bundle install --jobs 4 --retry 3
 
     - name: Fetch SDKs via given dependency option
+      if: startsWith(github.event.pull_request.head.ref, 'release/')
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+            VERSION=${BRANCH_NAME#release/}
       run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }} -v $VERSION
 
     - name: Build Integration App
