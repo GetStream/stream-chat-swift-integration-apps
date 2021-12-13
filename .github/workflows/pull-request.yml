@@ -57,10 +57,8 @@ jobs:
         bundle install --jobs 4 --retry 3
 
     - name: Fetch SDKs via given dependency option
-      if: startsWith(github.event.pull_request.head.ref, 'release/')
-            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-            VERSION=${BRANCH_NAME#release/}
-      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }} -v $VERSION
+      if: !startsWith(matrix.integration_type, "spm")
+      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }}
 
     - name: Build Integration App
       run: bundle exec fastlane build_integration_app scheme:${{ matrix.scheme }}
