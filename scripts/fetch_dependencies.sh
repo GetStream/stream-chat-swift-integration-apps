@@ -30,6 +30,7 @@ function updatePods {
 }
 
 function updateSPM {
+  # Updates version of StreamChatUI package in related StreamChatIntegration-SPMxcode project
   sed -i '' -e "s|version =.*|version = '$VERSION_NUMBER';|g" StreamChatIntegration-SPM.xcodeproj/project.pbxproj
   bundle exec fastlane build_integration_app scheme:StreamChatIntegration-SPM
 }
