@@ -11,3 +11,53 @@ platform :ios do
     )
   end
 end
+
+desc "Start a new release"
+lane :test_release do |options|
+  # Ensure we are on the main branch
+  ensure_git_branch(branch: 'main')
+
+  # Ensure we have a clean git status
+  ensure_git_status_clean unless options[:no_ensure_clean]
+
+  # Ensure we have a release version
+  UI.user_error!("Please use version number") unless !options[:version].nil?
+
+  # Ensure We Have the GITHUB Token
+  UI.user_error!("Please set GITHUB_TOKEN environment value. See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token") unless !ENV["GITHUB_TOKEN"].nil?
+
+  # Version Number
+  version_number = options[:version]
+
+  # Checkout New Release Branch
+  sh("git checkout -b " + "release/" + version_number)
+
+  # Update version of our SDK for all supported integrations
+  sh("../scripts/fetch_dependencies.sh -v #{version_number}")
+
+  # Commit changes (version bumps, etc)
+  sh("git add -A")
+
+  if(!prompt(text: "Will commit changes. All looking good?", boolean: true))
+    UI.user_error!("Not committing changes")
+  end
+
+  sh("git commit -m 'Release #{version_number}'")
+
+  if(!prompt(text: "Will push changes. All looking good?", boolean: true))
+    UI.user_error!("Not pushing changes")
+  end
+
+  push_to_git_remote(tags: false)
+
+  # Open a new PR
+  create_pull_request(
+    api_token: ENV["GITHUB_TOKEN"],
+    repo: "GetStream/stream-chat-swift-integration-apps",
+    title: "#{version_number} Release",
+    head: "release/#{version_number}",
+    base: "main",
+    body: "Release #{version_number}"
+  )
+
+end
