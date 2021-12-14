@@ -39,7 +39,7 @@ function updateSPM {
 if [[ "$INTEGRATION" = "cocoapods" ]]; then
   echo "> Starting to grab SDKs using CocoaPods integration."
   echo "> Running: pod update --repo-update"
-    updatePods
+  updatePods
   exit;
 fi
 
@@ -47,7 +47,7 @@ fi
 if [[ "$INTEGRATION" = "spm" ]]; then
   echo "> Starting to grab SDKs using SwiftPM integration. Version: $VERSION_NUMBER"
   echo "> Running: bundle exec fastlane build_integration_app scheme:StreamChatIntegration-SPM"
-    updateSPM
+  updateSPM
   exit;
 fi
 
