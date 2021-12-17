@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         integration: [spm, cocoapods]
-        env: [production]
+        env: [OSS]
         include:
           - integration: spm
             integration_type: spm
@@ -35,13 +35,7 @@ jobs:
             scheme: StreamChatIntegration-CocoaPods
 
     steps:
-    - uses: actions/checkout@v1
-      with:
-        fetch-depth: 100
-
-    - uses: zendesk/setup-ruby@v1.75.0
-      with:
-        ruby-version: 3.0.1
+    - uses: actions/checkout@v2
 
     - uses: actions/cache@v2
       id: rubygem-cache
