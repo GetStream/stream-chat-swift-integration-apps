@@ -372,7 +372,7 @@
 			repositoryURL = "https://github.com/GetStream/stream-chat-swift.git";
 			requirement = {
 				kind = exactVersion;
-				version = '4.5.2';
+				version = '4.6.0';
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
