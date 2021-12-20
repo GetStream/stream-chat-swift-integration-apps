@@ -1,31 +1,19 @@
 PODS:
-  - Nuke (10.5.2)
-  - Starscream (4.0.4)
-  - StreamChat (4.5.2):
-    - Starscream (~> 4.0)
-  - StreamChatUI (4.5.2):
-    - Nuke (~> 10.0)
-    - StreamChat (= 4.5.2)
-    - SwiftyGif (~> 5.4)
-  - SwiftyGif (5.4.1)
+  - StreamChat (4.6.0)
+  - StreamChatUI (4.6.0):
+    - StreamChat (= 4.6.0)
 
 DEPENDENCIES:
   - StreamChatUI
 
 SPEC REPOS:
   trunk:
-    - Nuke
-    - Starscream
     - StreamChat
     - StreamChatUI
-    - SwiftyGif
 
 SPEC CHECKSUMS:
-  Nuke: 62d6d401e2b3ce553151a6f5e2f9332878710fbd
-  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  StreamChat: db2da43871cd6390f072e08ab58d237683cd9f30
-  StreamChatUI: 4039ea29a2445a4dae9004d0c92ed139c88d1d1f
-  SwiftyGif: 6895c887f5551618a3c5dd3ecb512419105bacca
+  StreamChat: 1dfb427fe01f61abbe0e0ba74dde4245c511400d
+  StreamChatUI: 887e4076a1e52fec8f8d31b3fb06430a65a6c43a
 
 PODFILE CHECKSUM: 00f05d8b92e06b80e9bab6773742f1f71d119503
 

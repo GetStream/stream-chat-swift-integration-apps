@@ -33,7 +33,7 @@ lane :test_release do |options|
   sh("git checkout -b " + "release/" + version_number)
 
   # Update version of our SDK for all supported integrations
-  sh("../scripts/fetch_dependencies.sh -v #{version_number}")
+  sh("cd .. && scripts/fetch_dependencies.sh -v #{version_number}")
 
   # Commit changes (version bumps, etc)
   sh("git add -A")
