@@ -7,128 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		854D53561CFC563FD24AEEBF /* libPods-StreamChatIntegration-CocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534B373B53C40B35827251B1 /* libPods-StreamChatIntegration-CocoaPods.a */; };
-		A384B77427722DA20004670F /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B76C27722DA20004670F /* ChannelListVC.swift */; };
-		A384B77527722DA20004670F /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B76D27722DA20004670F /* ChatClient+shared.swift */; };
-		A384B77627722DA20004670F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A384B76E27722DA20004670F /* Assets.xcassets */; };
-		A384B77727722DA20004670F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B76F27722DA20004670F /* User.swift */; };
-		A384B77827722DA20004670F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A384B77027722DA20004670F /* LaunchScreen.storyboard */; };
-		A384B77927722DA20004670F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B77227722DA20004670F /* AppDelegate.swift */; };
+		2FFC63C5A3C91A4CA9DA5966 /* libPods-StreamChatIntegration-XC-CocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AB2E78012FE753F43BAE4D /* libPods-StreamChatIntegration-XC-CocoaPods.a */; };
+		A368F977276CE3B3006A9A50 /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */; };
+		A368F978276CE3B3006A9A50 /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */; };
+		A368F979276CE3B3006A9A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A368F971276CE3B3006A9A50 /* Assets.xcassets */; };
+		A368F97A276CE3B3006A9A50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F972276CE3B3006A9A50 /* User.swift */; };
+		A368F97B276CE3B3006A9A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */; };
+		A368F97C276CE3B3006A9A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F975276CE3B3006A9A50 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28F9887EDA8CDC3095E7DD45 /* Pods-StreamChatIntegration-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-CocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-CocoaPods/Pods-StreamChatIntegration-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
-		4A6753AE1834832FEF519458 /* Pods-StreamChatIntegration-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-CocoaPods.release.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-CocoaPods/Pods-StreamChatIntegration-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
-		534B373B53C40B35827251B1 /* libPods-StreamChatIntegration-CocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamChatIntegration-CocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A33960822743AEA200A13BE4 /* StreamChatIntegration-CocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-CocoaPods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A384B76C27722DA20004670F /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
-		A384B76D27722DA20004670F /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
-		A384B76E27722DA20004670F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A384B76F27722DA20004670F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A384B77127722DA20004670F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A384B77227722DA20004670F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A384B77327722DA20004670F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16670F33D7FAB28812A0BB07 /* Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		45AB2E78012FE753F43BAE4D /* libPods-StreamChatIntegration-XC-CocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamChatIntegration-XC-CocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C844AB0A2B9C5E4B8B8B65 /* Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		A368F917276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-XC-CocoaPods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
+		A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
+		A368F971276CE3B3006A9A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A368F972276CE3B3006A9A50 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A368F974276CE3B3006A9A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A368F975276CE3B3006A9A50 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A368F976276CE3B3006A9A50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A339607F2743AEA200A13BE4 /* Frameworks */ = {
+		A368F914276CE171006A9A50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				854D53561CFC563FD24AEEBF /* libPods-StreamChatIntegration-CocoaPods.a in Frameworks */,
+				2FFC63C5A3C91A4CA9DA5966 /* libPods-StreamChatIntegration-XC-CocoaPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37DC7904E344050A1B2D7525 /* Pods */ = {
+		A368F90E276CE171006A9A50 = {
 			isa = PBXGroup;
 			children = (
-				28F9887EDA8CDC3095E7DD45 /* Pods-StreamChatIntegration-CocoaPods.debug.xcconfig */,
-				4A6753AE1834832FEF519458 /* Pods-StreamChatIntegration-CocoaPods.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A33960792743AEA200A13BE4 = {
-			isa = PBXGroup;
-			children = (
-				A384B76B27722DA20004670F /* StreamChatIntegrationSource */,
-				A33960832743AEA200A13BE4 /* Products */,
-				37DC7904E344050A1B2D7525 /* Pods */,
-				DC98CF6FF9A05E1DD51BD5AD /* Frameworks */,
+				A368F96E276CE3B3006A9A50 /* StreamChatIntegrationSource */,
+				A368F918276CE171006A9A50 /* Products */,
+				F6A2D6D9114D1E389F35EAE1 /* Pods */,
+				D3D1A49A8ADAD9477F47DF79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		A33960832743AEA200A13BE4 /* Products */ = {
+		A368F918276CE171006A9A50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A33960822743AEA200A13BE4 /* StreamChatIntegration-CocoaPods.app */,
+				A368F917276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A384B76B27722DA20004670F /* StreamChatIntegrationSource */ = {
+		A368F96E276CE3B3006A9A50 /* StreamChatIntegrationSource */ = {
 			isa = PBXGroup;
 			children = (
-				A384B76C27722DA20004670F /* ChannelListVC.swift */,
-				A384B76D27722DA20004670F /* ChatClient+shared.swift */,
-				A384B76E27722DA20004670F /* Assets.xcassets */,
-				A384B76F27722DA20004670F /* User.swift */,
-				A384B77027722DA20004670F /* LaunchScreen.storyboard */,
-				A384B77227722DA20004670F /* AppDelegate.swift */,
-				A384B77327722DA20004670F /* Info.plist */,
+				A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */,
+				A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */,
+				A368F971276CE3B3006A9A50 /* Assets.xcassets */,
+				A368F972276CE3B3006A9A50 /* User.swift */,
+				A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */,
+				A368F975276CE3B3006A9A50 /* AppDelegate.swift */,
+				A368F976276CE3B3006A9A50 /* Info.plist */,
 			);
-			path = StreamChatIntegrationSource;
+			name = StreamChatIntegrationSource;
+			path = ../StreamChatIntegrationSource;
 			sourceTree = "<group>";
 		};
-		DC98CF6FF9A05E1DD51BD5AD /* Frameworks */ = {
+		D3D1A49A8ADAD9477F47DF79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				534B373B53C40B35827251B1 /* libPods-StreamChatIntegration-CocoaPods.a */,
+				45AB2E78012FE753F43BAE4D /* libPods-StreamChatIntegration-XC-CocoaPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6A2D6D9114D1E389F35EAE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65C844AB0A2B9C5E4B8B8B65 /* Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig */,
+				16670F33D7FAB28812A0BB07 /* Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A33960812743AEA200A13BE4 /* StreamChatIntegration-CocoaPods */ = {
+		A368F916276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A33960962743AEA400A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-CocoaPods" */;
+			buildConfigurationList = A368F92B276CE171006A9A50 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-XC-CocoaPods" */;
 			buildPhases = (
-				6F907510B248CC70137B589C /* [CP] Check Pods Manifest.lock */,
-				A339607E2743AEA200A13BE4 /* Sources */,
-				A339607F2743AEA200A13BE4 /* Frameworks */,
-				A33960802743AEA200A13BE4 /* Resources */,
-				151638F1BAC34D6CDD0322DE /* [CP] Copy Pods Resources */,
+				FCFD13C304D5BF08BF4EF02C /* [CP] Check Pods Manifest.lock */,
+				A368F913276CE171006A9A50 /* Sources */,
+				A368F914276CE171006A9A50 /* Frameworks */,
+				A368F915276CE171006A9A50 /* Resources */,
+				1054C546EE1641B6C65D9E63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "StreamChatIntegration-CocoaPods";
-			productName = "StreamChatIntegration-CocoaPods";
-			productReference = A33960822743AEA200A13BE4 /* StreamChatIntegration-CocoaPods.app */;
+			name = "StreamChatIntegration-XC-CocoaPods";
+			productName = "StreamChatIntegration-XC-CocoaPods";
+			productReference = A368F917276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A339607A2743AEA200A13BE4 /* Project object */ = {
+		A368F90F276CE171006A9A50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					A33960812743AEA200A13BE4 = {
-						CreatedOnToolsVersion = 13.1;
+					A368F916276CE171006A9A50 = {
+						CreatedOnToolsVersion = 13.2;
 					};
 				};
 			};
-			buildConfigurationList = A339607D2743AEA200A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-CocoaPods" */;
+			buildConfigurationList = A368F912276CE171006A9A50 /* Build configuration list for PBXProject "StreamChatIntegration-XC-CocoaPods" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,47 +137,47 @@
 				en,
 				Base,
 			);
-			mainGroup = A33960792743AEA200A13BE4;
-			productRefGroup = A33960832743AEA200A13BE4 /* Products */;
+			mainGroup = A368F90E276CE171006A9A50;
+			productRefGroup = A368F918276CE171006A9A50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A33960812743AEA200A13BE4 /* StreamChatIntegration-CocoaPods */,
+				A368F916276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A33960802743AEA200A13BE4 /* Resources */ = {
+		A368F915276CE171006A9A50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A384B77627722DA20004670F /* Assets.xcassets in Resources */,
-				A384B77827722DA20004670F /* LaunchScreen.storyboard in Resources */,
+				A368F979276CE3B3006A9A50 /* Assets.xcassets in Resources */,
+				A368F97B276CE3B3006A9A50 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		151638F1BAC34D6CDD0322DE /* [CP] Copy Pods Resources */ = {
+		1054C546EE1641B6C65D9E63 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-CocoaPods/Pods-StreamChatIntegration-CocoaPods-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-CocoaPods/Pods-StreamChatIntegration-CocoaPods-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-CocoaPods/Pods-StreamChatIntegration-CocoaPods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F907510B248CC70137B589C /* [CP] Check Pods Manifest.lock */ = {
+		FCFD13C304D5BF08BF4EF02C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,7 +192,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StreamChatIntegration-CocoaPods-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StreamChatIntegration-XC-CocoaPods-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -201,24 +202,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A339607E2743AEA200A13BE4 /* Sources */ = {
+		A368F913276CE171006A9A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A384B77927722DA20004670F /* AppDelegate.swift in Sources */,
-				A384B77427722DA20004670F /* ChannelListVC.swift in Sources */,
-				A384B77527722DA20004670F /* ChatClient+shared.swift in Sources */,
-				A384B77727722DA20004670F /* User.swift in Sources */,
+				A368F97C276CE3B3006A9A50 /* AppDelegate.swift in Sources */,
+				A368F977276CE3B3006A9A50 /* ChannelListVC.swift in Sources */,
+				A368F978276CE3B3006A9A50 /* ChatClient+shared.swift in Sources */,
+				A368F97A276CE3B3006A9A50 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A384B77027722DA20004670F /* LaunchScreen.storyboard */ = {
+		A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A384B77127722DA20004670F /* Base */,
+				A368F974276CE3B3006A9A50 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -226,7 +227,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A33960942743AEA400A13BE4 /* Debug */ = {
+		A368F929276CE171006A9A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -287,7 +288,7 @@
 			};
 			name = Debug;
 		};
-		A33960952743AEA400A13BE4 /* Release */ = {
+		A368F92A276CE171006A9A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,9 +343,9 @@
 			};
 			name = Release;
 		};
-		A33960972743AEA400A13BE4 /* Debug */ = {
+		A368F92C276CE171006A9A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28F9887EDA8CDC3095E7DD45 /* Pods-StreamChatIntegration-CocoaPods.debug.xcconfig */;
+			baseConfigurationReference = 65C844AB0A2B9C5E4B8B8B65 /* Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,19 +353,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = ../StreamChatIntegrationSource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-CocoaPods";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage.StreamChatIntegration-XC-CocoaPods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,9 +372,9 @@
 			};
 			name = Debug;
 		};
-		A33960982743AEA400A13BE4 /* Release */ = {
+		A368F92D276CE171006A9A50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A6753AE1834832FEF519458 /* Pods-StreamChatIntegration-CocoaPods.release.xcconfig */;
+			baseConfigurationReference = 16670F33D7FAB28812A0BB07 /* Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,19 +382,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = ../StreamChatIntegrationSource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-CocoaPods";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage.StreamChatIntegration-XC-CocoaPods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -405,25 +404,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A339607D2743AEA200A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-CocoaPods" */ = {
+		A368F912276CE171006A9A50 /* Build configuration list for PBXProject "StreamChatIntegration-XC-CocoaPods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A33960942743AEA400A13BE4 /* Debug */,
-				A33960952743AEA400A13BE4 /* Release */,
+				A368F929276CE171006A9A50 /* Debug */,
+				A368F92A276CE171006A9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A33960962743AEA400A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-CocoaPods" */ = {
+		A368F92B276CE171006A9A50 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-XC-CocoaPods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A33960972743AEA400A13BE4 /* Debug */,
-				A33960982743AEA400A13BE4 /* Release */,
+				A368F92C276CE171006A9A50 /* Debug */,
+				A368F92D276CE171006A9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A339607A2743AEA200A13BE4 /* Project object */;
+	rootObject = A368F90F276CE171006A9A50 /* Project object */;
 }

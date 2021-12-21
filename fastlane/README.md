@@ -13,26 +13,39 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 # Available Actions
 
-### test_release
+## iOS
+
+### ios build_oss_integration_app
 
 ```sh
-[bundle exec] fastlane test_release
+[bundle exec] fastlane ios build_oss_integration_app
+```
+
+Build OSS Integration App
+
+### ios build_xc_integration_app
+
+```sh
+[bundle exec] fastlane ios build_xc_integration_app
+```
+
+Build XC Integration App
+
+### ios build_all_integration_apps
+
+```sh
+[bundle exec] fastlane ios build_all_integration_apps
+```
+
+Build all integration apps
+
+### ios test_release
+
+```sh
+[bundle exec] fastlane ios test_release
 ```
 
 Start a new release
-
-----
-
-
-## iOS
-
-### ios build_integration_app
-
-```sh
-[bundle exec] fastlane ios build_integration_app
-```
-
-Build Integration App
 
 ----
 

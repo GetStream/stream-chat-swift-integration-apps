@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A384B76427722D970004670F /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B75C27722D970004670F /* ChannelListVC.swift */; };
-		A384B76527722D970004670F /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B75D27722D970004670F /* ChatClient+shared.swift */; };
-		A384B76627722D970004670F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A384B75E27722D970004670F /* Assets.xcassets */; };
-		A384B76727722D970004670F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B75F27722D970004670F /* User.swift */; };
-		A384B76827722D970004670F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A384B76027722D970004670F /* LaunchScreen.storyboard */; };
-		A384B76927722D970004670F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A384B76227722D970004670F /* AppDelegate.swift */; };
-		C1A2DA9D2771EF8000CCF9CE /* StreamChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A2DA9B2771EF8000CCF9CE /* StreamChat.xcframework */; };
-		C1A2DA9E2771EF8000CCF9CE /* StreamChatUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A2DA9C2771EF8000CCF9CE /* StreamChatUI.xcframework */; };
+		A368F982276CED9A006A9A50 /* StreamChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97F276CED72006A9A50 /* StreamChat.xcframework */; };
+		A368F983276CED9A006A9A50 /* StreamChat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97F276CED72006A9A50 /* StreamChat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A368F985276CED9B006A9A50 /* StreamChatUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */; };
+		A368F986276CED9B006A9A50 /* StreamChatUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A38C316F27720AF300E13E13 /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316727720AF300E13E13 /* ChannelListVC.swift */; };
+		A38C317027720AF300E13E13 /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316827720AF300E13E13 /* ChatClient+shared.swift */; };
+		A38C317127720AF300E13E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38C316927720AF300E13E13 /* Assets.xcassets */; };
+		A38C317227720AF300E13E13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316A27720AF300E13E13 /* User.swift */; };
+		A38C317327720AF300E13E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */; };
+		A38C317427720AF300E13E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316D27720AF300E13E13 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A3A380E82743D7FC00CB4D6C /* Embed Frameworks */ = {
+		A368F984276CED9A006A9A50 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A368F983276CED9A006A9A50 /* StreamChat.xcframework in Embed Frameworks */,
+				A368F986276CED9B006A9A50 /* StreamChatUI.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,100 +35,101 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A384B75C27722D970004670F /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
-		A384B75D27722D970004670F /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
-		A384B75E27722D970004670F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A384B75F27722D970004670F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A384B76127722D970004670F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A384B76227722D970004670F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A384B76327722D970004670F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3A380AF2743BEEC00CB4D6C /* StreamChatIntegration-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1A2DA9B2771EF8000CCF9CE /* StreamChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChat.xcframework; path = Carthage/Build/StreamChat.xcframework; sourceTree = "<group>"; };
-		C1A2DA9C2771EF8000CCF9CE /* StreamChatUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChatUI.xcframework; path = Carthage/Build/StreamChatUI.xcframework; sourceTree = "<group>"; };
+		A368F947276CE264006A9A50 /* StreamChatIntegration-XC-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-XC-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChatUI.xcframework; path = Carthage/Build/StreamChatUI.xcframework; sourceTree = "<group>"; };
+		A368F97F276CED72006A9A50 /* StreamChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChat.xcframework; path = Carthage/Build/StreamChat.xcframework; sourceTree = "<group>"; };
+		A38C316727720AF300E13E13 /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
+		A38C316827720AF300E13E13 /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
+		A38C316927720AF300E13E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A38C316A27720AF300E13E13 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A38C316C27720AF300E13E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A38C316D27720AF300E13E13 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A38C316E27720AF300E13E13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A3A380AC2743BEEC00CB4D6C /* Frameworks */ = {
+		A368F944276CE264006A9A50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A2DA9D2771EF8000CCF9CE /* StreamChat.xcframework in Frameworks */,
-				C1A2DA9E2771EF8000CCF9CE /* StreamChatUI.xcframework in Frameworks */,
+				A368F982276CED9A006A9A50 /* StreamChat.xcframework in Frameworks */,
+				A368F985276CED9B006A9A50 /* StreamChatUI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A384B75B27722D970004670F /* StreamChatIntegrationSource */ = {
+		A368F93E276CE264006A9A50 = {
 			isa = PBXGroup;
 			children = (
-				A384B75C27722D970004670F /* ChannelListVC.swift */,
-				A384B75D27722D970004670F /* ChatClient+shared.swift */,
-				A384B75E27722D970004670F /* Assets.xcassets */,
-				A384B75F27722D970004670F /* User.swift */,
-				A384B76027722D970004670F /* LaunchScreen.storyboard */,
-				A384B76227722D970004670F /* AppDelegate.swift */,
-				A384B76327722D970004670F /* Info.plist */,
-			);
-			path = StreamChatIntegrationSource;
-			sourceTree = "<group>";
-		};
-		A3A380A62743BEEC00CB4D6C = {
-			isa = PBXGroup;
-			children = (
-				C1A2DA9B2771EF8000CCF9CE /* StreamChat.xcframework */,
-				C1A2DA9C2771EF8000CCF9CE /* StreamChatUI.xcframework */,
-				A384B75B27722D970004670F /* StreamChatIntegrationSource */,
-				A3A380B02743BEEC00CB4D6C /* Products */,
+				A38C316627720AF300E13E13 /* StreamChatIntegrationSource */,
+				A368F97F276CED72006A9A50 /* StreamChat.xcframework */,
+				A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */,
+				A368F948276CE264006A9A50 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A3A380B02743BEEC00CB4D6C /* Products */ = {
+		A368F948276CE264006A9A50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3A380AF2743BEEC00CB4D6C /* StreamChatIntegration-Carthage.app */,
+				A368F947276CE264006A9A50 /* StreamChatIntegration-XC-Carthage.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A38C316627720AF300E13E13 /* StreamChatIntegrationSource */ = {
+			isa = PBXGroup;
+			children = (
+				A38C316727720AF300E13E13 /* ChannelListVC.swift */,
+				A38C316827720AF300E13E13 /* ChatClient+shared.swift */,
+				A38C316927720AF300E13E13 /* Assets.xcassets */,
+				A38C316A27720AF300E13E13 /* User.swift */,
+				A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */,
+				A38C316D27720AF300E13E13 /* AppDelegate.swift */,
+				A38C316E27720AF300E13E13 /* Info.plist */,
+			);
+			name = StreamChatIntegrationSource;
+			path = ../StreamChatIntegrationSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3A380AE2743BEEC00CB4D6C /* StreamChatIntegration-Carthage */ = {
+		A368F946276CE264006A9A50 /* StreamChatIntegration-XC-Carthage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3A380C32743BEEE00CB4D6C /* Build configuration list for PBXNativeTarget "StreamChatIntegration-Carthage" */;
+			buildConfigurationList = A368F95B276CE264006A9A50 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-XC-Carthage" */;
 			buildPhases = (
-				A3A380AB2743BEEC00CB4D6C /* Sources */,
-				A3A380AC2743BEEC00CB4D6C /* Frameworks */,
-				A3A380AD2743BEEC00CB4D6C /* Resources */,
-				A3A380E82743D7FC00CB4D6C /* Embed Frameworks */,
+				A368F943276CE264006A9A50 /* Sources */,
+				A368F944276CE264006A9A50 /* Frameworks */,
+				A368F945276CE264006A9A50 /* Resources */,
+				A368F984276CED9A006A9A50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "StreamChatIntegration-Carthage";
-			productName = "StreamChatIntegration-Carthage";
-			productReference = A3A380AF2743BEEC00CB4D6C /* StreamChatIntegration-Carthage.app */;
+			name = "StreamChatIntegration-XC-Carthage";
+			productName = "StreamChatIntegration-XC-Carthage";
+			productReference = A368F947276CE264006A9A50 /* StreamChatIntegration-XC-Carthage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A3A380A72743BEEC00CB4D6C /* Project object */ = {
+		A368F93F276CE264006A9A50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					A3A380AE2743BEEC00CB4D6C = {
-						CreatedOnToolsVersion = 13.1;
+					A368F946276CE264006A9A50 = {
+						CreatedOnToolsVersion = 13.2;
 					};
 				};
 			};
-			buildConfigurationList = A3A380AA2743BEEC00CB4D6C /* Build configuration list for PBXProject "StreamChatIntegration-Carthage" */;
+			buildConfigurationList = A368F942276CE264006A9A50 /* Build configuration list for PBXProject "StreamChatIntegration-XC-Carthage" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,47 +137,47 @@
 				en,
 				Base,
 			);
-			mainGroup = A3A380A62743BEEC00CB4D6C;
-			productRefGroup = A3A380B02743BEEC00CB4D6C /* Products */;
+			mainGroup = A368F93E276CE264006A9A50;
+			productRefGroup = A368F948276CE264006A9A50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3A380AE2743BEEC00CB4D6C /* StreamChatIntegration-Carthage */,
+				A368F946276CE264006A9A50 /* StreamChatIntegration-XC-Carthage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A3A380AD2743BEEC00CB4D6C /* Resources */ = {
+		A368F945276CE264006A9A50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A384B76627722D970004670F /* Assets.xcassets in Resources */,
-				A384B76827722D970004670F /* LaunchScreen.storyboard in Resources */,
+				A38C317127720AF300E13E13 /* Assets.xcassets in Resources */,
+				A38C317327720AF300E13E13 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A3A380AB2743BEEC00CB4D6C /* Sources */ = {
+		A368F943276CE264006A9A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A384B76927722D970004670F /* AppDelegate.swift in Sources */,
-				A384B76427722D970004670F /* ChannelListVC.swift in Sources */,
-				A384B76527722D970004670F /* ChatClient+shared.swift in Sources */,
-				A384B76727722D970004670F /* User.swift in Sources */,
+				A38C317427720AF300E13E13 /* AppDelegate.swift in Sources */,
+				A38C316F27720AF300E13E13 /* ChannelListVC.swift in Sources */,
+				A38C317027720AF300E13E13 /* ChatClient+shared.swift in Sources */,
+				A38C317227720AF300E13E13 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A384B76027722D970004670F /* LaunchScreen.storyboard */ = {
+		A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A384B76127722D970004670F /* Base */,
+				A38C316C27720AF300E13E13 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -180,7 +185,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A3A380C12743BEEE00CB4D6C /* Debug */ = {
+		A368F959276CE264006A9A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -241,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		A3A380C22743BEEE00CB4D6C /* Release */ = {
+		A368F95A276CE264006A9A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,7 +301,7 @@
 			};
 			name = Release;
 		};
-		A3A380C42743BEEE00CB4D6C /* Debug */ = {
+		A368F95C276CE264006A9A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -305,19 +310,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = ../StreamChatIntegrationSource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage.StreamChatIntegration-XC-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +329,7 @@
 			};
 			name = Debug;
 		};
-		A3A380C52743BEEE00CB4D6C /* Release */ = {
+		A368F95D276CE264006A9A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -334,19 +338,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = ../StreamChatIntegrationSource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-Carthage.StreamChatIntegration-XC-Carthage";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,25 +360,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3A380AA2743BEEC00CB4D6C /* Build configuration list for PBXProject "StreamChatIntegration-Carthage" */ = {
+		A368F942276CE264006A9A50 /* Build configuration list for PBXProject "StreamChatIntegration-XC-Carthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3A380C12743BEEE00CB4D6C /* Debug */,
-				A3A380C22743BEEE00CB4D6C /* Release */,
+				A368F959276CE264006A9A50 /* Debug */,
+				A368F95A276CE264006A9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3A380C32743BEEE00CB4D6C /* Build configuration list for PBXNativeTarget "StreamChatIntegration-Carthage" */ = {
+		A368F95B276CE264006A9A50 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-XC-Carthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3A380C42743BEEE00CB4D6C /* Debug */,
-				A3A380C52743BEEE00CB4D6C /* Release */,
+				A368F95C276CE264006A9A50 /* Debug */,
+				A368F95D276CE264006A9A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A3A380A72743BEEC00CB4D6C /* Project object */;
+	rootObject = A368F93F276CE264006A9A50 /* Project object */;
 }

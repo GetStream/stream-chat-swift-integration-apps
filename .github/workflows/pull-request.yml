@@ -24,18 +24,32 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        integration: [spm, cocoapods, carthage]
-        env: [OSS]
+        integration: [spm, spm-xc, cocoapods, cocoapods-xc, carthage, carthage-xc]
         include:
           - integration: spm
-            integration_type: spm
+            integration_type: OSS
             scheme: StreamChatIntegration-SPM
+            lane: build_oss_integration_app
+          - integration: spm-xc
+            integration_type: BINARY
+            scheme: StreamChatIntegration-XC-SPM
+            lane: build_xc_integration_app
           - integration: cocoapods
-            integration_type: cocoapods
+            integration_type: OSS
             scheme: StreamChatIntegration-CocoaPods
+            lane: build_oss_integration_app
+          - integration: cocoapods-xc
+            integration_type: BINARY
+            scheme: StreamChatIntegration-XC-CocoaPods
+            lane: build_xc_integration_app
           - integration: carthage
-            integration_type: carthage
+            integration_type: OSS
             scheme: StreamChatIntegration-Carthage
+            lane: build_oss_integration_app
+          - integration: carthage-xc
+            integration_type: BINARY
+            scheme: StreamChatIntegration-XC-Carthage
+            lane: build_xc_integration_app
 
     steps:
     - uses: actions/checkout@v2
@@ -55,7 +69,7 @@ jobs:
 
     - name: Fetch SDKs via given dependency option
       if: startsWith(matrix.integration_type, 'spm') == false
-      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration_type }}
+      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration }}
 
     - name: Build Integration App
-      run: bundle exec fastlane build_integration_app scheme:${{ matrix.scheme }}
+      run: bundle exec fastlane ${{ matrix.lane }} scheme:${{ matrix.scheme }}

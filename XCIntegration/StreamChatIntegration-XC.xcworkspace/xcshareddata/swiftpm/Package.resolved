@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "StreamChat",
-        "repositoryURL": "https://github.com/GetStream/stream-chat-swift.git",
+        "repositoryURL": "https://github.com/GetStream/stream-chat-swift-spm.git",
         "state": {
           "branch": null,
-          "revision": "2b868ca255658dbed2806ae6bde94f8793b4703c",
+          "revision": "95350af88585ab688d31f42137de3308f72608ed",
           "version": "4.6.0"
         }
       }
