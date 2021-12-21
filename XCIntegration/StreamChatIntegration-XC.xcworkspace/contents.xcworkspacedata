@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Cartfile">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <FileRef
+      location = "group:StreamChatIntegration-XC-Carthage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StreamChatIntegration-XC-CocoaPods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StreamChatIntegration-XC-SPM.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

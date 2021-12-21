@@ -1,0 +1,9 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+workspace 'StreamChatIntegration-XC'
+
+target 'StreamChatIntegration-XC-CocoaPods' do
+  project 'StreamChatIntegration-XC-CocoaPods.xcodeproj'
+  pod 'StreamChatUI-XCFramework'
+end
