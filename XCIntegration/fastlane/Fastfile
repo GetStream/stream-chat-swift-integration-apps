@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Build XC Integration App"
+  lane :build_xc_integration_app do |options|
+    build_app(
+      workspace: "StreamChatIntegration-XC.xcworkspace",
+      scheme: options[:scheme],
+      skip_archive: true,
+      skip_codesigning: true
+    )
+  end
+
+end

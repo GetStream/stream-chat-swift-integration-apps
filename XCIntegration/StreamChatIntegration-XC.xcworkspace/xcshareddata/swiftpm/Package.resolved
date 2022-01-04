@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/GetStream/stream-chat-swift-spm.git",
         "state": {
           "branch": null,
-          "revision": "95350af88585ab688d31f42137de3308f72608ed",
-          "version": "4.6.0"
+          "revision": "cc31f6a16ffb4219363fedd61fdc86a63770e98d",
+          "version": "4.8.0"
         }
       }
     ]
