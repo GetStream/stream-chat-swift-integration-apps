@@ -23,6 +23,22 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Build OSS Integration App
 
+### ios build_xc_integration_app
+
+```sh
+[bundle exec] fastlane ios build_xc_integration_app
+```
+
+Build XC Integration App
+
+### ios build_all_integration_apps
+
+```sh
+[bundle exec] fastlane ios build_all_integration_apps
+```
+
+Build all integration apps
+
 ### ios test_release
 
 ```sh
