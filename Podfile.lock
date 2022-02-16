@@ -1,7 +1,7 @@
 PODS:
-  - StreamChat (4.10.0)
-  - StreamChatUI (4.10.0):
-    - StreamChat (= 4.10.0)
+  - StreamChat (4.10.1)
+  - StreamChatUI (4.10.1):
+    - StreamChat (= 4.10.1)
 
 DEPENDENCIES:
   - StreamChatUI
@@ -12,8 +12,8 @@ SPEC REPOS:
     - StreamChatUI
 
 SPEC CHECKSUMS:
-  StreamChat: 57cbb360b20f4e9e7fb59d3aad6a414746e15a34
-  StreamChatUI: 7619530bf190d921c0add05261c32c6902955aa1
+  StreamChat: 32169983653150e913056a8b5443583ecf127f8e
+  StreamChatUI: eb065c605c46a0228819dad2561d480e78e3afe4
 
 PODFILE CHECKSUM: 00f05d8b92e06b80e9bab6773742f1f71d119503
 
