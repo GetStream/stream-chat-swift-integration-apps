@@ -5,6 +5,7 @@
 import UIKit
 import StreamChat
 import StreamChatUI
+import Atlantis
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,12 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupLogger()
         
         // Client
-        let credentials = UserCredentials.default
-        setupChatClient(with: credentials)
+        setupChatClient()
         
         // UI
         let channelList = ChannelListVC()
-        let query = ChannelListQuery(filter: .containMembers(userIds: [credentials.id]))
+        let query = ChannelListQuery(filter: .containMembers(userIds: ["tim"]))
         channelList.controller = ChatClient.shared.channelListController(query: query)
 
         /// Embed in navigation controller
@@ -34,8 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
         
-    private func setupChatClient(with userCredentials: UserCredentials) {
-        let config = ChatClientConfig(apiKey: .init(apiKey))
+    private func setupChatClient() {
+        Atlantis.start()
+
+        var config = ChatClientConfig(apiKey: .init("uykdzqamca7z"))
+//        config.baseURL = BaseURL(url: URL(string: "chat-edge-frankfurt-ce1.stream-io-api.com")!)
 
         /// create an instance of ChatClient and share it using the singleton
         ChatClient.shared = ChatClient(config: config)
@@ -43,12 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// connect to chat
         ChatClient.shared.connectUser(
             userInfo: UserInfo(
-                id: userCredentials.id,
-                name: userCredentials.name,
-                imageURL: userCredentials.avatarURL
+                id: "tim",
+                name: "tim",
+                imageURL: nil
             ),
-            token: userCredentials.token
-        )
+            token: try! Token(rawValue: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGltIn0.kKN6tKi0OeLb_yM8yLX9ZcoT02NhPPkNybsPAhrYtek")
+        ) { error in
+            if let error = error {
+                print("Connection failed with: \(error)")
+            }
+
+        }
     }
     
     private func setupLogger() {
@@ -59,6 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         LogConfig.showDate = false
         LogConfig.showFunctionName = false
         
-        LogConfig.level = .warning
+        LogConfig.level = .debug
     }
 }

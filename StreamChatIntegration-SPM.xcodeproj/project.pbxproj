@@ -15,6 +15,7 @@
 		A33960742743AD7200A13BE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33960692743AD7200A13BE4 /* User.swift */; };
 		A33960752743AD7200A13BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A339606A2743AD7200A13BE4 /* LaunchScreen.storyboard */; };
 		A33960772743AD7200A13BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339606E2743AD7200A13BE4 /* AppDelegate.swift */; };
+		A39DA37F27FC6A0A002F89EC /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = A39DA37E27FC6A0A002F89EC /* Atlantis */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A339605D2743A6E500A13BE4 /* StreamChatUI in Frameworks */,
+				A39DA37F27FC6A0A002F89EC /* Atlantis in Frameworks */,
 				A339605B2743A6E500A13BE4 /* StreamChat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +92,7 @@
 			packageProductDependencies = (
 				A339605A2743A6E500A13BE4 /* StreamChat */,
 				A339605C2743A6E500A13BE4 /* StreamChatUI */,
+				A39DA37E27FC6A0A002F89EC /* Atlantis */,
 			);
 			productName = "StreamChatIntegration-SPM";
 			productReference = A33960232743A5F100A13BE4 /* StreamChatIntegration-SPM.app */;
@@ -121,6 +124,7 @@
 			mainGroup = A339601A2743A5F100A13BE4;
 			packageReferences = (
 				A33960592743A6E500A13BE4 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+				A39DA37D27FC6A0A002F89EC /* XCRemoteSwiftPackageReference "atlantis" */,
 			);
 			productRefGroup = A33960242743A5F100A13BE4 /* Products */;
 			projectDirPath = "";
@@ -295,12 +299,14 @@
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Atlantis would use Bonjour Service to discover Proxyman app from your local network.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,12 +330,14 @@
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Atlantis would use Bonjour Service to discover Proxyman app from your local network.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,8 +379,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GetStream/stream-chat-swift.git";
 			requirement = {
-				kind = exactVersion;
-				version = '4.13.0';
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.13.0;
+			};
+		};
+		A39DA37D27FC6A0A002F89EC /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -387,6 +403,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A33960592743A6E500A13BE4 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
 			productName = StreamChatUI;
+		};
+		A39DA37E27FC6A0A002F89EC /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A39DA37D27FC6A0A002F89EC /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

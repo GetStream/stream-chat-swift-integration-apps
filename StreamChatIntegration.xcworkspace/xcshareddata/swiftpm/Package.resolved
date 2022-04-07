@@ -1,16 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "StreamChat",
-        "repositoryURL": "https://github.com/GetStream/stream-chat-swift.git",
-        "state": {
-          "branch": null,
-          "revision": "a1e769e93b500975d0aece93d11acd90cd3c7fa2",
-          "version": "4.13.0"
-        }
+  "pins" : [
+    {
+      "identity" : "atlantis",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ProxymanApp/atlantis.git",
+      "state" : {
+        "revision" : "b60ef22babc5cc8997841b378bb2993229fac9eb",
+        "version" : "1.16.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "stream-chat-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swift.git",
+      "state" : {
+        "revision" : "5088fe5da726003df8f35044f448107034cbff2f",
+        "version" : "4.13.1"
+      }
+    }
+  ],
+  "version" : 2
 }
