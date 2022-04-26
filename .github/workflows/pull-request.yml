@@ -19,7 +19,7 @@ jobs:
   integration-tests:
     name: Integration Tests
     # The following runner label `macos-10.15` is used by the Github hosted runners and the self-hosed runners
-    runs-on: macos-11
+    runs-on: macos-12
     timeout-minutes: 20
     strategy:
       fail-fast: false
