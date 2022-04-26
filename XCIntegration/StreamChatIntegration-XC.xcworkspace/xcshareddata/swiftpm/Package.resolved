@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "StreamChat",
-        "repositoryURL": "https://github.com/GetStream/stream-chat-swift-spm.git",
-        "state": {
-          "branch": null,
-          "revision": "29cacd5764ee16c8426efa3bc3614d5b3feea14e",
-          "version": "4.13.0"
-        }
+  "pins" : [
+    {
+      "identity" : "stream-chat-swift-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GetStream/stream-chat-swift-spm.git",
+      "state" : {
+        "revision" : "0c574c3518b33515f83a7eef014fc64b9a8ecb44",
+        "version" : "4.14.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
