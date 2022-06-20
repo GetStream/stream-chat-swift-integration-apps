@@ -46,6 +46,10 @@ function updateSPM {
   # Updates version of StreamChatUI package in related StreamChatIntegration-SPM xcode project
   sed -i '' -e "s|version =.*|version = '$VERSION_NUMBER';|g" StreamChatIntegration-SPM.xcodeproj/project.pbxproj
   bundle exec fastlane build_oss_integration_app scheme:StreamChatIntegration-SPM
+
+  # Updates version of StreamChatUI package in related StreamChatIntegration-SPM xcode project
+  sed -i '' -e "s|version =.*|version = '$VERSION_NUMBER';|g" StreamChatIntegration-MultiBundle.xcodeproj/project.pbxproj
+  bundle exec fastlane build_oss_integration_app scheme:StreamChatIntegration-MultiBundle
 }
 
 function updateXCSPM {
