@@ -74,6 +74,7 @@ Example/Carthage/.env
 Example/Carthage/fastlane/report.xml
 Sample/Cocoapods/Podfile.lock
 docusaurus/.env
+XCIntegration/fastlane/report.xml
 
 # Environment Variables
 .env
