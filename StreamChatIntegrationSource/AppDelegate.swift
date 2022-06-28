@@ -11,54 +11,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
+    private let chat = StreamChatWrapper()
+    private let pushNotifications = PushNotifications()
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        // Logger
-        setupLogger()
-        
-        // Client
-        let credentials = UserCredentials.default
-        setupChatClient(with: credentials)
-        
+        // Handle push notifications
+        handlePushNotificationResponse()
+        chat.onRemotePushRegistration = { [weak self] in
+            self?.pushNotifications.registerForPushNotifications()
+        }
+
+        // Setup & connect to Chat
+        chat.setUpChat()
+
+        // Connect default user
+        let userCredentials = UserCredentials.default
+        chat.connectUser(with: userCredentials)
+
         // UI
-        let channelList = ChannelListVC()
-        let query = ChannelListQuery(filter: .containMembers(userIds: [credentials.id]))
-        channelList.controller = ChatClient.shared.channelListController(query: query)
+        let channelList = chat.makeChannelListViewController(with: userCredentials)
 
         /// Embed in navigation controller
         window = UIWindow()
         window?.rootViewController = UINavigationController(rootViewController: channelList)
         window?.makeKeyAndVisible()
-        
+ 
         return true
     }
-        
-    private func setupChatClient(with userCredentials: UserCredentials) {
-        let config = ChatClientConfig(apiKey: .init(apiKey))
+}
 
-        /// create an instance of ChatClient and share it using the singleton
-        ChatClient.shared = ChatClient(config: config)
+// MARK: Push Notifications
 
-        /// connect to chat
-        ChatClient.shared.connectUser(
-            userInfo: UserInfo(
-                id: userCredentials.id,
-                name: userCredentials.name,
-                imageURL: userCredentials.avatarURL
-            ),
-            token: userCredentials.token
-        )
+extension AppDelegate {
+
+
+    func application(
+        _ application: UIApplication,
+        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+    ) {
+        // Registers current device for push notifications on Stream backend
+        chat.registerForPushNotifications(with: deviceToken)
     }
-    
-    private func setupLogger() {
-        LogConfig.formatters = [
-            PrefixLogFormatter(prefixes: [.info: "ℹ️", .debug: "🛠", .warning: "⚠️", .error: "🚨"])
-        ]
-        LogConfig.showThreadName = false
-        LogConfig.showDate = false
-        LogConfig.showFunctionName = false
-        
-        LogConfig.level = .warning
+
+    func handlePushNotificationResponse() {
+        pushNotifications.onNotificationResponse = { response in
+            guard case UNNotificationDefaultActionIdentifier = response.actionIdentifier else {
+                return
+            }
+
+            print("Received notification: \(response.notification)")
+        }
     }
+
 }

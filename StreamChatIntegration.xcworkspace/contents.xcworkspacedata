@@ -11,6 +11,9 @@
       location = "group:Podfile">
    </FileRef>
    <FileRef
+      location = "group:StreamChatIntegration-MultiBundle.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:StreamChatIntegration-Carthage.xcodeproj">
    </FileRef>
    <FileRef

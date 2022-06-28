@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FFC63C5A3C91A4CA9DA5966 /* libPods-StreamChatIntegration-XC-CocoaPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AB2E78012FE753F43BAE4D /* libPods-StreamChatIntegration-XC-CocoaPods.a */; };
-		A368F977276CE3B3006A9A50 /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */; };
-		A368F978276CE3B3006A9A50 /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */; };
+		A32D54C82860A37900E66AF9 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D54C52860A37900E66AF9 /* PushNotifications.swift */; };
+		A32D54C92860A37900E66AF9 /* StreamChatWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D54C72860A37900E66AF9 /* StreamChatWrapper.swift */; };
 		A368F979276CE3B3006A9A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A368F971276CE3B3006A9A50 /* Assets.xcassets */; };
 		A368F97A276CE3B3006A9A50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368F972276CE3B3006A9A50 /* User.swift */; };
 		A368F97B276CE3B3006A9A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */; };
@@ -20,9 +20,9 @@
 		16670F33D7FAB28812A0BB07 /* Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		45AB2E78012FE753F43BAE4D /* libPods-StreamChatIntegration-XC-CocoaPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamChatIntegration-XC-CocoaPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C844AB0A2B9C5E4B8B8B65 /* Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-StreamChatIntegration-XC-CocoaPods/Pods-StreamChatIntegration-XC-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		A32D54C52860A37900E66AF9 /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		A32D54C72860A37900E66AF9 /* StreamChatWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamChatWrapper.swift; sourceTree = "<group>"; };
 		A368F917276CE171006A9A50 /* StreamChatIntegration-XC-CocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-XC-CocoaPods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
-		A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
 		A368F971276CE3B3006A9A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A368F972276CE3B3006A9A50 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A368F974276CE3B3006A9A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32D54C62860A37900E66AF9 /* StreamChat */ = {
+			isa = PBXGroup;
+			children = (
+				A32D54C72860A37900E66AF9 /* StreamChatWrapper.swift */,
+			);
+			path = StreamChat;
+			sourceTree = "<group>";
+		};
 		A368F90E276CE171006A9A50 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +71,13 @@
 		A368F96E276CE3B3006A9A50 /* StreamChatIntegrationSource */ = {
 			isa = PBXGroup;
 			children = (
-				A368F96F276CE3B3006A9A50 /* ChannelListVC.swift */,
-				A368F970276CE3B3006A9A50 /* ChatClient+shared.swift */,
-				A368F971276CE3B3006A9A50 /* Assets.xcassets */,
-				A368F972276CE3B3006A9A50 /* User.swift */,
-				A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */,
-				A368F975276CE3B3006A9A50 /* AppDelegate.swift */,
 				A368F976276CE3B3006A9A50 /* Info.plist */,
+				A368F975276CE3B3006A9A50 /* AppDelegate.swift */,
+				A32D54C52860A37900E66AF9 /* PushNotifications.swift */,
+				A368F972276CE3B3006A9A50 /* User.swift */,
+				A368F971276CE3B3006A9A50 /* Assets.xcassets */,
+				A368F973276CE3B3006A9A50 /* LaunchScreen.storyboard */,
+				A32D54C62860A37900E66AF9 /* StreamChat */,
 			);
 			name = StreamChatIntegrationSource;
 			path = ../StreamChatIntegrationSource;
@@ -122,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					A368F916276CE171006A9A50 = {
 						CreatedOnToolsVersion = 13.2;
@@ -207,9 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A368F97C276CE3B3006A9A50 /* AppDelegate.swift in Sources */,
-				A368F977276CE3B3006A9A50 /* ChannelListVC.swift in Sources */,
-				A368F978276CE3B3006A9A50 /* ChatClient+shared.swift in Sources */,
 				A368F97A276CE3B3006A9A50 /* User.swift in Sources */,
+				A32D54C82860A37900E66AF9 /* PushNotifications.swift in Sources */,
+				A32D54C92860A37900E66AF9 /* StreamChatWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

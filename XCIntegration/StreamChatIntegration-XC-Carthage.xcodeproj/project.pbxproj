@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32D54CD2860A38800E66AF9 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D54CA2860A38800E66AF9 /* PushNotifications.swift */; };
+		A32D54CE2860A38800E66AF9 /* StreamChatWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32D54CC2860A38800E66AF9 /* StreamChatWrapper.swift */; };
 		A368F982276CED9A006A9A50 /* StreamChat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97F276CED72006A9A50 /* StreamChat.xcframework */; };
 		A368F983276CED9A006A9A50 /* StreamChat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97F276CED72006A9A50 /* StreamChat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A368F985276CED9B006A9A50 /* StreamChatUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */; };
 		A368F986276CED9B006A9A50 /* StreamChatUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A38C316F27720AF300E13E13 /* ChannelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316727720AF300E13E13 /* ChannelListVC.swift */; };
-		A38C317027720AF300E13E13 /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316827720AF300E13E13 /* ChatClient+shared.swift */; };
 		A38C317127720AF300E13E13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38C316927720AF300E13E13 /* Assets.xcassets */; };
 		A38C317227720AF300E13E13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C316A27720AF300E13E13 /* User.swift */; };
 		A38C317327720AF300E13E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */; };
@@ -35,11 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A32D54CA2860A38800E66AF9 /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		A32D54CC2860A38800E66AF9 /* StreamChatWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamChatWrapper.swift; sourceTree = "<group>"; };
 		A368F947276CE264006A9A50 /* StreamChatIntegration-XC-Carthage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-XC-Carthage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A368F97E276CED72006A9A50 /* StreamChatUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChatUI.xcframework; path = Carthage/Build/StreamChatUI.xcframework; sourceTree = "<group>"; };
 		A368F97F276CED72006A9A50 /* StreamChat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StreamChat.xcframework; path = Carthage/Build/StreamChat.xcframework; sourceTree = "<group>"; };
-		A38C316727720AF300E13E13 /* ChannelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListVC.swift; sourceTree = "<group>"; };
-		A38C316827720AF300E13E13 /* ChatClient+shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
 		A38C316927720AF300E13E13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A38C316A27720AF300E13E13 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A38C316C27720AF300E13E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32D54CB2860A38800E66AF9 /* StreamChat */ = {
+			isa = PBXGroup;
+			children = (
+				A32D54CC2860A38800E66AF9 /* StreamChatWrapper.swift */,
+			);
+			path = StreamChat;
+			sourceTree = "<group>";
+		};
 		A368F93E276CE264006A9A50 = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +89,13 @@
 		A38C316627720AF300E13E13 /* StreamChatIntegrationSource */ = {
 			isa = PBXGroup;
 			children = (
-				A38C316727720AF300E13E13 /* ChannelListVC.swift */,
-				A38C316827720AF300E13E13 /* ChatClient+shared.swift */,
-				A38C316927720AF300E13E13 /* Assets.xcassets */,
-				A38C316A27720AF300E13E13 /* User.swift */,
-				A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */,
-				A38C316D27720AF300E13E13 /* AppDelegate.swift */,
 				A38C316E27720AF300E13E13 /* Info.plist */,
+				A38C316D27720AF300E13E13 /* AppDelegate.swift */,
+				A32D54CA2860A38800E66AF9 /* PushNotifications.swift */,
+				A38C316A27720AF300E13E13 /* User.swift */,
+				A38C316927720AF300E13E13 /* Assets.xcassets */,
+				A38C316B27720AF300E13E13 /* LaunchScreen.storyboard */,
+				A32D54CB2860A38800E66AF9 /* StreamChat */,
 			);
 			name = StreamChatIntegrationSource;
 			path = ../StreamChatIntegrationSource;
@@ -122,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					A368F946276CE264006A9A50 = {
 						CreatedOnToolsVersion = 13.2;
@@ -165,9 +173,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38C317427720AF300E13E13 /* AppDelegate.swift in Sources */,
-				A38C316F27720AF300E13E13 /* ChannelListVC.swift in Sources */,
-				A38C317027720AF300E13E13 /* ChatClient+shared.swift in Sources */,
 				A38C317227720AF300E13E13 /* User.swift in Sources */,
+				A32D54CD2860A38800E66AF9 /* PushNotifications.swift in Sources */,
+				A32D54CE2860A38800E66AF9 /* StreamChatWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,9 @@
-name: PULL REQUEST
+name: Cron job
 
 on:
-  pull_request:
-    branches:
-      - main
+  schedule:
+    # Runs every monday
+    - cron:  '0 0 * * 1'
 
   # Can be manually triggered
   workflow_dispatch:
@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        integration: [spm, spm-xc, cocoapods, cocoapods-xc, carthage-xc]
+        integration: [spm, spm-xc, cocoapods, cocoapods-xc, carthage, carthage-xc]
         include:
           - integration: spm
             integration_type: OSS
@@ -41,6 +41,10 @@ jobs:
             integration_type: BINARY
             scheme: StreamChatIntegration-XC-CocoaPods
             lane: build_xc_integration_app
+          - integration: carthage
+            integration_type: OSS
+            scheme: StreamChatIntegration-Carthage
+            lane: build_oss_integration_app
           - integration: carthage-xc
             integration_type: BINARY
             scheme: StreamChatIntegration-XC-Carthage

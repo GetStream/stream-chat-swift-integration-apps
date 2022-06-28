@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		A339605B2743A6E500A13BE4 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = A339605A2743A6E500A13BE4 /* StreamChat */; };
 		A339605D2743A6E500A13BE4 /* StreamChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = A339605C2743A6E500A13BE4 /* StreamChatUI */; };
-		A33960732743AD7200A13BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33960682743AD7200A13BE4 /* Assets.xcassets */; };
 		A33960742743AD7200A13BE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33960692743AD7200A13BE4 /* User.swift */; };
 		A33960752743AD7200A13BE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A339606A2743AD7200A13BE4 /* LaunchScreen.storyboard */; };
 		A33960772743AD7200A13BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A339606E2743AD7200A13BE4 /* AppDelegate.swift */; };
-		A36C3A14286099440004EB7E /* StreamChatWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C3A11286099440004EB7E /* StreamChatWrapper.swift */; };
-		A36C3A1F28609E800004EB7E /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C3A1E28609E800004EB7E /* PushNotifications.swift */; };
+		A36C39FF286099180004EB7E /* StreamChatWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C39FC286099180004EB7E /* StreamChatWrapper.swift */; };
+		A36C3A1928609E3D0004EB7E /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C3A1728609DB50004EB7E /* PushNotifications.swift */; };
+		A36C3A252860A1130004EB7E /* Assets-MB.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36C3A242860A1120004EB7E /* Assets-MB.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A33960232743A5F100A13BE4 /* StreamChatIntegration-SPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-SPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A33960682743AD7200A13BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A33960232743A5F100A13BE4 /* StreamChatIntegration-MultiBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StreamChatIntegration-MultiBundle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33960692743AD7200A13BE4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A339606B2743AD7200A13BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A339606E2743AD7200A13BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A339606F2743AD7200A13BE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A36C3A11286099440004EB7E /* StreamChatWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamChatWrapper.swift; sourceTree = "<group>"; };
-		A36C3A1E28609E800004EB7E /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		A36C39FC286099180004EB7E /* StreamChatWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamChatWrapper.swift; sourceTree = "<group>"; };
+		A36C3A1728609DB50004EB7E /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		A36C3A212860A03A0004EB7E /* Info-MB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-MB.plist"; sourceTree = "<group>"; };
+		A36C3A222860A03A0004EB7E /* DemoApp(MB).entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "DemoApp(MB).entitlements"; sourceTree = "<group>"; };
+		A36C3A242860A1120004EB7E /* Assets-MB.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets-MB.xcassets"; path = "MultiBundle/Assets-MB.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,15 +46,17 @@
 		A339601A2743A5F100A13BE4 = {
 			isa = PBXGroup;
 			children = (
-				A33960642743AD7200A13BE4 /* StreamChatIntegrationSource */,
+				A36C3A242860A1120004EB7E /* Assets-MB.xcassets */,
+				A36C3A202860A03A0004EB7E /* MultiBundle */,
 				A33960242743A5F100A13BE4 /* Products */,
+				A33960642743AD7200A13BE4 /* StreamChatIntegrationSource */,
 			);
 			sourceTree = "<group>";
 		};
 		A33960242743A5F100A13BE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A33960232743A5F100A13BE4 /* StreamChatIntegration-SPM.app */,
+				A33960232743A5F100A13BE4 /* StreamChatIntegration-MultiBundle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,29 +66,37 @@
 			children = (
 				A339606F2743AD7200A13BE4 /* Info.plist */,
 				A339606E2743AD7200A13BE4 /* AppDelegate.swift */,
-				A36C3A1E28609E800004EB7E /* PushNotifications.swift */,
+				A36C3A1728609DB50004EB7E /* PushNotifications.swift */,
 				A33960692743AD7200A13BE4 /* User.swift */,
-				A33960682743AD7200A13BE4 /* Assets.xcassets */,
 				A339606A2743AD7200A13BE4 /* LaunchScreen.storyboard */,
-				A36C3A0E286099440004EB7E /* StreamChat */,
+				A36C39F9286099180004EB7E /* StreamChat */,
 			);
 			path = StreamChatIntegrationSource;
 			sourceTree = "<group>";
 		};
-		A36C3A0E286099440004EB7E /* StreamChat */ = {
+		A36C39F9286099180004EB7E /* StreamChat */ = {
 			isa = PBXGroup;
 			children = (
-				A36C3A11286099440004EB7E /* StreamChatWrapper.swift */,
+				A36C39FC286099180004EB7E /* StreamChatWrapper.swift */,
 			);
 			path = StreamChat;
+			sourceTree = "<group>";
+		};
+		A36C3A202860A03A0004EB7E /* MultiBundle */ = {
+			isa = PBXGroup;
+			children = (
+				A36C3A212860A03A0004EB7E /* Info-MB.plist */,
+				A36C3A222860A03A0004EB7E /* DemoApp(MB).entitlements */,
+			);
+			path = MultiBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A33960222743A5F100A13BE4 /* StreamChatIntegration-SPM */ = {
+		A33960222743A5F100A13BE4 /* StreamChatIntegration-MultiBundle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A33960502743A5F200A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-SPM" */;
+			buildConfigurationList = A33960502743A5F200A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-MultiBundle" */;
 			buildPhases = (
 				A339601F2743A5F100A13BE4 /* Sources */,
 				A33960202743A5F100A13BE4 /* Frameworks */,
@@ -94,13 +106,13 @@
 			);
 			dependencies = (
 			);
-			name = "StreamChatIntegration-SPM";
+			name = "StreamChatIntegration-MultiBundle";
 			packageProductDependencies = (
 				A339605A2743A6E500A13BE4 /* StreamChat */,
 				A339605C2743A6E500A13BE4 /* StreamChatUI */,
 			);
-			productName = "StreamChatIntegration-SPM";
-			productReference = A33960232743A5F100A13BE4 /* StreamChatIntegration-SPM.app */;
+			productName = "StreamChatIntegration-MultiBundle";
+			productReference = A33960232743A5F100A13BE4 /* StreamChatIntegration-MultiBundle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A339601E2743A5F100A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-SPM" */;
+			buildConfigurationList = A339601E2743A5F100A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-MultiBundle" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A33960222743A5F100A13BE4 /* StreamChatIntegration-SPM */,
+				A33960222743A5F100A13BE4 /* StreamChatIntegration-MultiBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33960732743AD7200A13BE4 /* Assets.xcassets in Resources */,
+				A36C3A252860A1130004EB7E /* Assets-MB.xcassets in Resources */,
 				A33960752743AD7200A13BE4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,10 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36C3A1F28609E800004EB7E /* PushNotifications.swift in Sources */,
+				A36C3A1928609E3D0004EB7E /* PushNotifications.swift in Sources */,
 				A33960742743AD7200A13BE4 /* User.swift in Sources */,
 				A33960772743AD7200A13BE4 /* AppDelegate.swift in Sources */,
-				A36C3A14286099440004EB7E /* StreamChatWrapper.swift in Sources */,
+				A36C39FF286099180004EB7E /* StreamChatWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,13 +310,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "MultiBundle/DemoApp(MB).entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development: Bahadir Oncel (C42UH28Y58)";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = "MultiBundle/Info-MB.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi Bundle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera for sending photo attachments.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Atlantis would use Bonjour Service to discover Proxyman app from your local network.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for taking a video.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -314,8 +333,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-SPM";
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.iOS.ChatDemoAppTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development io.getstream.iOS.ChatDemoAppTwo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,13 +347,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "MultiBundle/DemoApp(MB).entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EHV7XZLAHA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StreamChatIntegrationSource/Info.plist;
+				INFOPLIST_FILE = "MultiBundle/Info-MB.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi Bundle";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera for sending photo attachments.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Atlantis would use Bonjour Service to discover Proxyman app from your local network.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for taking a video.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -343,8 +370,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.getstream.iOS.StreamChatIntegration-SPM";
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.iOS.ChatDemoAppTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc io.getstream.iOS.ChatDemoAppTwo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,7 +382,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A339601E2743A5F100A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-SPM" */ = {
+		A339601E2743A5F100A13BE4 /* Build configuration list for PBXProject "StreamChatIntegration-MultiBundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A339604E2743A5F200A13BE4 /* Debug */,
@@ -363,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A33960502743A5F200A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-SPM" */ = {
+		A33960502743A5F200A13BE4 /* Build configuration list for PBXNativeTarget "StreamChatIntegration-MultiBundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33960512743A5F200A13BE4 /* Debug */,
