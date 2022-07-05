@@ -68,6 +68,8 @@ function updateXCSPM {
 }
 
 function updateCarthage {
+  rm -rf Carthage/Build
+  rm -rf Carthage/Checkouts
   carthage update --use-xcframeworks --no-use-binaries --platform iOS
 }
 
