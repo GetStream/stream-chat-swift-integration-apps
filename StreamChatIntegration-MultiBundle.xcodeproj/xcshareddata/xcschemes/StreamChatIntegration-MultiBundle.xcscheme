@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1340"
+   LastUpgradeVersion = "1330"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A33960222743A5F100A13BE4"
-               BuildableName = "StreamChatIntegration-SPM.app"
-               BlueprintName = "StreamChatIntegration-SPM"
-               ReferencedContainer = "container:StreamChatIntegration-SPM.xcodeproj">
+               BuildableName = "StreamChatIntegration-MultiBundle.app"
+               BlueprintName = "StreamChatIntegration-MultiBundle"
+               ReferencedContainer = "container:StreamChatIntegration-MultiBundle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A33960222743A5F100A13BE4"
-            BuildableName = "StreamChatIntegration-SPM.app"
-            BlueprintName = "StreamChatIntegration-SPM"
-            ReferencedContainer = "container:StreamChatIntegration-SPM.xcodeproj">
+            BuildableName = "StreamChatIntegration-MultiBundle.app"
+            BlueprintName = "StreamChatIntegration-MultiBundle"
+            ReferencedContainer = "container:StreamChatIntegration-MultiBundle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A33960222743A5F100A13BE4"
-            BuildableName = "StreamChatIntegration-SPM.app"
-            BlueprintName = "StreamChatIntegration-SPM"
-            ReferencedContainer = "container:StreamChatIntegration-SPM.xcodeproj">
+            BuildableName = "StreamChatIntegration-MultiBundle.app"
+            BlueprintName = "StreamChatIntegration-MultiBundle"
+            ReferencedContainer = "container:StreamChatIntegration-MultiBundle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
