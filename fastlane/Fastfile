@@ -11,7 +11,7 @@ platform :ios do
   desc "Build OSS Integration App"
   lane :build_oss_integration_app do |options|
     build_app(
-      workspace: "StreamChatIntegration.xcworkspace",
+      project: "#{options[:scheme]}.xcodeproj",
       scheme: options[:scheme],
       skip_archive: true,
       skip_codesigning: true
