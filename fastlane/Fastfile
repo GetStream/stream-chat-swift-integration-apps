@@ -10,12 +10,23 @@ end
 platform :ios do
   desc "Build OSS Integration App"
   lane :build_oss_integration_app do |options|
-    build_app(
-      project: "#{options[:scheme]}.xcodeproj",
-      scheme: options[:scheme],
-      skip_archive: true,
-      skip_codesigning: true
-    )
+    scheme = options[:scheme]
+  
+    if scheme.downcase["cocoapods"]
+      build_app(
+        workspace: "StreamChatIntegration.xcworkspace",
+        scheme: scheme,
+        skip_archive: true,
+        skip_codesigning: true
+      )
+    else
+      build_app(
+        project: "#{scheme}.xcodeproj",
+        scheme: scheme,
+        skip_archive: true,
+        skip_codesigning: true
+      )
+    end
   end
 
   desc "Build XC Integration App"
