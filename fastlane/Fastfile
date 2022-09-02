@@ -53,10 +53,10 @@ platform :ios do
   desc "Start a new release"
   lane :test_release do |options|
     # Ensure we are on the main branch
-    ensure_git_branch(branch: 'main')
+    # ensure_git_branch(branch: 'main')
 
     # Ensure we have a clean git status
-    ensure_git_status_clean unless options[:no_ensure_clean]
+    # ensure_git_status_clean unless options[:no_ensure_clean]
 
     # Ensure we have a release version
     UI.user_error!("Please use version number") unless !options[:version].nil?
@@ -68,10 +68,10 @@ platform :ios do
     version_number = options[:version]
 
     # Checkout New Release Branch
-    sh("git checkout -b " + "release/" + version_number)
+    # sh("git checkout -b " + "release/" + version_number)
 
     # Update version of our SDK for all supported integrations
-    sh("cd .. && scripts/fetch_dependencies.sh -v #{version_number}")
+    # sh("cd .. && scripts/fetch_dependencies.sh -v #{version_number}")
 
     # Commit changes (version bumps, etc)
     sh("git add -A")
