@@ -59,7 +59,7 @@ platform :ios do
     ensure_git_status_clean unless options[:no_ensure_clean]
 
     # Reset Carthage Folder
-    sh("rm -rf Carthage")
+    sh("rm -rf Carthage && rm -rf XCIntegration/Carthage")
 
     # Ensure we have a release version
     UI.user_error!("Please use version number") unless !options[:version].nil?
