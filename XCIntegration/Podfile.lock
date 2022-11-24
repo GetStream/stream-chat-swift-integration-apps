@@ -1,7 +1,7 @@
 PODS:
-  - StreamChat-XCFramework (4.24.0)
-  - StreamChatUI-XCFramework (4.24.0):
-    - StreamChat-XCFramework (= 4.24.0)
+  - StreamChat-XCFramework (4.24.1)
+  - StreamChatUI-XCFramework (4.24.1):
+    - StreamChat-XCFramework (= 4.24.1)
 
 DEPENDENCIES:
   - StreamChatUI-XCFramework
@@ -12,8 +12,8 @@ SPEC REPOS:
     - StreamChatUI-XCFramework
 
 SPEC CHECKSUMS:
-  StreamChat-XCFramework: 8480cf603ee0e4179176ba4f09c507cdc1d0e152
-  StreamChatUI-XCFramework: f255031b63cab0411f9b2d2b1e5793a5ffff4dba
+  StreamChat-XCFramework: 872e140e4688eb3216a0f5b37c4f455b7cfe68c7
+  StreamChatUI-XCFramework: b907913795dd9e9e3caf30e19e5a8a2a5e35f5d9
 
 PODFILE CHECKSUM: 0d5f7b6ba638150cc666757002db9b3cb980eaac
 
