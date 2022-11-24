@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/GetStream/stream-chat-swift.git",
       "state" : {
-        "revision" : "f537e7d25f3e2cc4ef3222f9183bbcbfe96e7760",
-        "version" : "4.24.0"
+        "revision" : "30caff3f680abcda3226a0776c85c5c9de023130",
+        "version" : "4.24.1"
       }
     },
     {
