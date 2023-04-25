@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/GetStream/stream-chat-swift-spm.git",
       "state" : {
-        "revision" : "4441a6960ba9a7ed8d8849041f4b889f492182e3",
-        "version" : "4.30.0"
+        "revision" : "694ccf0db4d430855eaeeb6b771d7fde87bc7752",
+        "version" : "4.31.0"
       }
     }
   ],
