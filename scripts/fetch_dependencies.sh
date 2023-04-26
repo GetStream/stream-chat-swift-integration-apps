@@ -42,7 +42,7 @@ function updateSPM {
      echo "VERSION argument was not passed (eg. -v 4.6.0). Skipping..."
      exit;
   fi
-  
+
   # Updates version of StreamChatUI package in related StreamChatIntegration-SPM xcode project
   sed -i '' -e "s|version =.*|version = '$VERSION_NUMBER';|g" StreamChatIntegration-SPM.xcodeproj/project.pbxproj
   bundle exec fastlane build_oss_integration_app scheme:StreamChatIntegration-SPM
@@ -57,13 +57,13 @@ function updateXCSPM {
      echo "VERSION argument was not passed (eg. -v 4.6.0). Skipping..."
      exit;
   fi
-  
+
   cd $XC_FOLDER
-  
+
   # Updates version of StreamChatUI package in related StreamChatIntegration--XC-SPM xcode project
   sed -i '' -e "s|version =.*|version = '$VERSION_NUMBER';|g" StreamChatIntegration-XC-SPM.xcodeproj/project.pbxproj
   bundle exec fastlane build_xc_integration_app scheme:StreamChatIntegration-XC-SPM
-  
+
   cd ..
 }
 
@@ -130,7 +130,7 @@ fi
 # All integration types - can be leveraged for local - non CI purposes
 if [[ -z "$INTEGRATION" ]]; then
   echo "> Integration option was not specified (eg: cocoapods or spm). Script will grab SDKs using all supported dependency managers."
-  
+
   echo "> Integration: cocoapods"
   echo "> Running: pod update"
   updatePods
