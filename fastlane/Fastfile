@@ -57,7 +57,7 @@ platform :ios do
     ensure_git_branch(branch: 'main')
 
     # Ensure we have a clean git status
-    ensure_git_status_clean unless options[:no_ensure_clean]
+    # COMMENTING THIS ON PURPOSE: ensure_git_status_clean unless options[:no_ensure_clean]
 
     # Ensure we have a release version
     UI.user_error!('Please use version number') if options[:version].nil?
@@ -82,7 +82,7 @@ platform :ios do
       bump_sdk_version(new_version: version_number, old_version: previous_version_number)
 
       # Update version of our SDK for all supported integrations
-      sh("scripts/fetch_dependencies.sh -v #{version_number}")
+      # COMMENTING THIS ON PURPOSE: sh("scripts/fetch_dependencies.sh -v #{version_number}")
     end
 
     # Commit changes (version bumps, etc)
