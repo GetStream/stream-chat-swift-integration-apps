@@ -4,7 +4,7 @@ skip_docs
 before_all do
   if is_ci
     setup_ci
-    xcversion(version: "~> 13.4.1")
+    xcversion(version: '~> 14.3')
   end
 end
 
