@@ -65,6 +65,9 @@ platform :ios do
     # Ensure We Have the GITHUB Token
     UI.user_error!('Please set GITHUB_TOKEN environment value. See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token') if ENV['GITHUB_TOKEN'].nil?
 
+    # Pull all git tags
+    sh('git pull --tags')
+
     # Previous Version Number
     previous_version_number = last_git_tag
 
@@ -111,8 +114,17 @@ platform :ios do
   end
 
   lane :bump_sdk_version do |options|
-    ['Cartfile', 'Podfile', 'XCIntegration/Podfile'].each do |file_path|
-      new_content = File.read(file_path).gsub!(options[:old_version], options[:new_version])
+    config_files = ['Cartfile', 'Podfile', 'XCIntegration/Podfile']
+    config_files.each do |file_path|
+      UI.important("Replacing SDK version #{options[:old_version]} to #{options[:new_version]} in #{file_path} ✍️")
+      old_content = File.read(file_path)
+
+      unless old_content.include?(options[:old_version])
+        UI.user_error!("#{file_path} does not contain the previous release version #{options[:old_version]}.\n" \
+                        'Make sure the previous release commit was tagged! 🕵️‍♂️')
+      end
+
+      new_content = old_content.gsub!(options[:old_version], options[:new_version])
       File.open(file_path, 'w') { |f| f.puts(new_content) }
     end
   end
