@@ -1,10 +1,10 @@
 PODS:
-  - StreamChat (4.35.1)
-  - StreamChatUI (4.35.1):
-    - StreamChat (= 4.35.1)
+  - StreamChat (4.35.2)
+  - StreamChatUI (4.35.2):
+    - StreamChat (= 4.35.2)
 
 DEPENDENCIES:
-  - StreamChatUI (= 4.35.1)
+  - StreamChatUI (= 4.35.2)
 
 SPEC REPOS:
   trunk:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - StreamChatUI
 
 SPEC CHECKSUMS:
-  StreamChat: eb4224aedcecce0c738db9eb0c2b3a621061c998
-  StreamChatUI: be3fd4e8e926f83a237780c4da10eff8667e9da4
+  StreamChat: 4388b58aa3dcf61712595485c3589f1e87236430
+  StreamChatUI: 366b4716546b09793f736cde11641e6d291795a7
 
-PODFILE CHECKSUM: 95bb6051a6151826baa9e59d0f412b2436b21030
+PODFILE CHECKSUM: 17f996a4e975290ddc4641eada4b3d5ed523f7a5
 
 COCOAPODS: 1.12.1
