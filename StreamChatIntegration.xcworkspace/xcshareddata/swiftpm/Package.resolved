@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/GetStream/stream-chat-swift.git",
       "state" : {
-        "revision" : "7efe79171c24c8eb312401f87c453c15f77fbba9",
-        "version" : "4.31.0"
+        "revision" : "ddd4e0710cc94db0e021b77553460c8fc1338fcb",
+        "version" : "4.37.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/GetStream/stream-chat-swift-test-helpers.git",
       "state" : {
-        "revision" : "237da98e4946ed8e2dac51d9e82e713b0d47a298",
-        "version" : "0.2.5"
+        "revision" : "938bba9a3714e3d139d9460fcd6ee9b851e33807",
+        "version" : "0.2.11"
       }
     },
     {
