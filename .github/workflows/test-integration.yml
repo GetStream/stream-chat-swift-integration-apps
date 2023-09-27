@@ -1,4 +1,4 @@
-name: PULL REQUEST
+name: Test Integration
 
 on:
   pull_request:
@@ -47,24 +47,16 @@ jobs:
             lane: build_xc_integration_app
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3.1.0
 
-    - uses: actions/cache@v2
-      id: rubygem-cache
+    - uses: ruby/setup-ruby@v1
       with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-
-    - name: Install Dependencies
-      run: |
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
+        ruby-version: 3.1
+        bundler-cache: true
 
     - name: Fetch SDKs via given dependency option
       if: startsWith(matrix.integration_type, 'spm') == false
-      run: ./scripts/fetch_dependencies.sh -i ${{ matrix.integration }}
+      run: ./scripts/fetch_dependencies.sh ${{ matrix.integration }}
 
     - name: Build Integration App
       run: bundle exec fastlane ${{ matrix.lane }} scheme:${{ matrix.scheme }}

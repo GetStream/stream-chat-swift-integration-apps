@@ -77,16 +77,8 @@ platform :ios do
     # Checkout New Release Branch
     sh("git checkout -b release/#{version_number}")
 
-    Dir.chdir('..') do
-      # Reset Carthage Folder
-      ['Carthage', 'XCIntegration/Carthage'].each { |dir| FileUtils.rm_rf(Dir.glob(dir)) }
-
-      # Bump version of our SDK in all config files
-      bump_sdk_version(new_version: version_number, old_version: previous_version_number)
-
-      # Update version of our SDK for all supported integrations
-      sh("scripts/fetch_dependencies.sh -v #{version_number}")
-    end
+    # Bump version of our SDK in all config files
+    bump_sdk_version(new_version: version_number, old_version: previous_version_number)
 
     # Commit changes (version bumps, etc)
     sh('git add -A')
@@ -114,18 +106,32 @@ platform :ios do
   end
 
   lane :bump_sdk_version do |options|
-    config_files = ['Cartfile', 'Podfile', 'XCIntegration/Podfile']
-    config_files.each do |file_path|
-      UI.important("Replacing SDK version #{options[:old_version]} to #{options[:new_version]} in #{file_path} ✍️")
-      old_content = File.read(file_path)
+    Dir.chdir('..') do
+      [
+        'Cartfile',
+        'Podfile',
+        'XCIntegration/Podfile',
+        'StreamChatIntegration-SPM.xcodeproj/project.pbxproj',
+        'StreamChatIntegration-MultiBundle.xcodeproj/project.pbxproj',
+        'XCIntegration/StreamChatIntegration-XC-SPM.xcodeproj/project.pbxproj'
+      ].each do |file_path|
+        UI.important("Replacing SDK version #{options[:old_version]} to #{options[:new_version]} in #{file_path} ✍️")
+        old_content = File.read(file_path)
 
-      unless old_content.include?(options[:old_version])
-        UI.user_error!("#{file_path} does not contain the previous release version #{options[:old_version]}.\n" \
-                        'Make sure the previous release commit was tagged! 🕵️‍♂️')
+        unless old_content.include?(options[:old_version])
+          UI.user_error!("#{file_path} does not contain the previous release version #{options[:old_version]}.\n" \
+                          'Make sure the previous release commit was tagged! 🕵️‍♂️')
+        end
+
+        new_content =
+          if file_path.include?('pbxproj')
+            old_content.gsub!("version = '#{options[:old_version]}'", "version = '#{options[:new_version]}'")
+          else
+            old_content.gsub!(options[:old_version], options[:new_version])
+          end
+
+        File.open(file_path, 'w') { |f| f.puts(new_content) }
       end
-
-      new_content = old_content.gsub!(options[:old_version], options[:new_version])
-      File.open(file_path, 'w') { |f| f.puts(new_content) }
     end
   end
 end
