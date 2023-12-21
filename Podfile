@@ -5,5 +5,5 @@ workspace 'StreamChatIntegration'
 
 target 'StreamChatIntegration-CocoaPods' do
   project 'StreamChatIntegration-CocoaPods.xcodeproj'
-  pod 'StreamChatUI', '4.45.0'
+  pod 'StreamChatUI', '4.46.0'
 end
